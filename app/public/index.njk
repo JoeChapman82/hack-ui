@@ -1,6 +1,18 @@
 {% extends "nunjucks/templates/layout.njk" %}
-
+{% block stylesheets %}
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="../css/main.css">
+{% endblock %}
 {% block body %}
-<h1>nunjucks ok</h1>
+{% include "nunjucks/partials/header.njk" %}
+<a class="plain" href="pages/patient-list">
+<div class="two-thirds-wrapper">
+  <div class="title-page">
+    <h1>Spine bulk chargeable status update</h1>
+    <h3 class="index-heading">Created by: The Incredible Bulk</h3>
+  </div>
+</div>
+</a>
 
+{% include "nunjucks/partials/footer.njk" %}
 {% endblock %}

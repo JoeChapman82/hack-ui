@@ -1,0 +1,46 @@
+{% extends "nunjucks/templates/layout.njk" %}
+{% block stylesheets %}
+<link rel="stylesheet" href="../css/main.css">
+{% endblock %}
+
+{% block body %}
+{% include "nunjucks/partials/header.njk" %}
+<main>
+  <div class="two-thirds-wrapper">
+    <h1>Status Report</h1>
+    <form class="" action="/pages/status-report" method="post">
+    <table>
+      <thead>
+        <th>OVM Chargeable Status</th>
+        <th>Name</th>
+        <th>NHS Number</th>
+        <th>Expiry Date</th>
+      </thead>
+      <tbody>
+        {% for item in data %}
+        <tr>
+          <td>{{ item.ovmChargeableStatus}}</td>
+          <td>{{ item.name}}</td>
+          <td>{{ item.nhsNumber }}<input type="hidden" name="nhs" value="{{ item.nhsNumber }}"></td>
+          <td>{{ item.date}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <input type="Submit" name="" value="Export">
+  </form>
+
+  </div>
+
+</main>
+
+
+
+
+
+{% include "nunjucks/partials/footer.njk" %}
+{% block scripts %}
+<script type="text/javascript" src="../scripts/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="../scripts/main.js"></script>
+{% endblock %}
+{% endblock %}

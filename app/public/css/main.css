@@ -41,5 +41,97 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  font-size: 120%; }
+
 body {
   background-color: white; }
+
+img {
+  max-width: 100%; }
+
+main {
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
+
+.two-thirds-wrapper {
+  width: 70%;
+  margin: 0 auto; }
+
+.clearfix {
+  clear: both;
+  display: block; }
+
+.title-page {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #e6f1f9;
+  border: 3px solid #0072c6;
+  color: black;
+  padding: 2rem;
+  margin-top: 7rem;
+  margin-bottom: 10rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px dimgray; }
+
+.plain {
+  text-decoration: none; }
+
+.logged-in {
+  padding: .1rem 0;
+  background-color: dimgray; }
+
+.logged {
+  text-align: right;
+  color: white; }
+
+input[type="submit"] {
+  padding: .5rem;
+  font-size: 90%;
+  background-color: #0072c6;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-right: 5rem;
+  margin-top: 2rem; }
+
+.expo-form {
+  margin-bottom: 5rem; }
+
+header {
+  width: 100%;
+  background-color: white;
+  border-bottom: 3px solid #0072c6;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: block;
+  clear: both; }
+
+footer {
+  width: 100%;
+  background-color: #0072c6;
+  border-top: 4px solid #005b9e;
+  padding: 4rem 0; }
+
+#nhsLogo {
+  margin-bottom: 2rem; }
+
+ul {
+  margin-bottom: 2rem; }
+  ul li {
+    margin: 1rem 0; }
+    ul li a {
+      color: white; }
+
+.table-wrapper {
+  width: 50%;
+  margin: 0 auto; }
+
+table, tr, td, th {
+  border: 1px solid black;
+  padding: .5rem;
+  text-align: center; }
+
+table {
+  margin-top: 2rem; }

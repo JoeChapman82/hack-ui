@@ -1,0 +1,66 @@
+{% extends "nunjucks/templates/layout.njk" %}
+{% block stylesheets %}
+<link rel="stylesheet" href="../css/main.css">
+{% endblock %}
+
+{% block body %}
+{% include "nunjucks/partials/header.njk" %}
+<main>
+  <div class="two-thirds-wrapper">
+    <h1>Patient list</h1>
+    <form class="" action="/pages/patient-list" method="post">
+      <table>
+        <thead>
+          <th>Surname</th>
+          <th>Forenames</th>
+          <th>NHS Number</th>
+          <th>Application Date</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Brown</td>
+            <td>James Michael</td>
+            <td><input type="hidden" name="nhs" value="9452304642">9452304642</td>
+            <td>17 February 2017</td>
+          </tr>
+          <tr>
+            <td>Smith</td>
+            <td>John Thomas</td>
+            <td><input type="hidden" name="nhs" value="9452678194">9452678194</td>
+            <td>17 February 2017</td>
+          </tr>
+          <tr>
+            <td>Alanson</td>
+            <td>Alan Davis</td>
+            <td><input type="hidden" name="nhs" value="9911002810">9911002810</td>
+            <td>15 February 2017</td>
+          </tr>
+          <tr>
+            <td>Johnson</td>
+            <td>Jack Reacher</td>
+            <td><input type="hidden" name="nhs" value="9912000773">9912000773</td>
+            <td>12 February 2017</td>
+          </tr>
+          <tr>
+            <td>Jackson</td>
+            <td>Janet Sarah</td>
+            <td><input type="hidden" name="nhs" value="9912003527">9912003527</td>
+            <td>09 February 2017</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <input type="Submit" name="" value="Check status">
+  </form>
+  </div>
+</main>
+
+
+
+
+{% include "nunjucks/partials/footer.njk" %}
+{% block scripts %}
+<script type="text/javascript" src="../scripts/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="../scripts/main.js"></script>
+{% endblock %}
+{% endblock %}

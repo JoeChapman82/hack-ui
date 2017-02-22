@@ -1,0 +1,14 @@
+.table-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+table, tr, td, th {
+  border: 1px solid $black;
+  padding: .5rem;
+  text-align: center;
+}
+
+table {
+  margin-top: 2rem;
+}

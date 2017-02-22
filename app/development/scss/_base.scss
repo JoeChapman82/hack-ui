@@ -1,3 +1,55 @@
+html {
+  font-size: 120%;
+}
+
 body {
   background-color: $white;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+padding-top: 1rem;
+padding-bottom: 2rem;
+
+}
+
+.two-thirds-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.clearfix {
+clear: both;
+display: block;
+}
+
+.title-page {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: mix($nhs-blue, $white, 10%);
+  border: 3px solid $nhs-blue;
+  color: $black;
+  padding: 2rem;
+  margin-top: 7rem;
+  margin-bottom: 10rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px $grey;
+}
+
+.plain {
+  text-decoration: none;
+}
+
+.logged-in {
+  padding: .1rem 0;
+  background-color: $grey;
+}
+
+.logged {
+  text-align: right;
+  color: $white;
 }

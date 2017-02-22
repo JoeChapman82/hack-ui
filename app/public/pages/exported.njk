@@ -1,0 +1,29 @@
+{% extends "nunjucks/templates/layout.njk" %}
+{% block stylesheets %}
+<link rel="stylesheet" href="../css/main.css">
+{% endblock %}
+
+{% block body %}
+{% include "nunjucks/partials/header.njk" %}
+<main>
+  <form class="expo-form" action="exported" method="post">
+
+  <div class="two-thirds-wrapper">
+<h1>{{ message }}</h1>
+<h2>Your data has been exported</h2>
+<input type="submit" name="" value="Return to menu">
+  </div>
+</form>
+
+</main>
+
+
+
+
+
+{% include "nunjucks/partials/footer.njk" %}
+{% block scripts %}
+<script type="text/javascript" src="../scripts/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="../scripts/main.js"></script>
+{% endblock %}
+{% endblock %}
